@@ -1,0 +1,124 @@
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/*Панель управления*/
+
+aside{
+    min-width: 240px;
+}
+
+main {
+    flex: 1;
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+aside .nav-pills .nav-link {
+    border-radius: 0;
+    color: #444444;
+}
+
+
+aside .nav-pills .nav-link:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+aside .nav-pills .nav-link.active {
+    background: rgba(0, 0, 0, 0.05);
+    color: #b90000;
+    border-left: 4px solid #b90000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/*Шапка*/
+
+#w1-collapse, #w2-collapse, #w3-collapse, #w4-collapse {
+    justify-content: flex-end;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+}
+
+/*Оценки*/
+
+.btn-outline-primary:hover {
+    color: black;
+    background: none;
+}
+
+.btn:first-child:active {
+    color: black;
+    background: none;
+}
+
+.btn-outline-primary:active {
+    color: black;
+    background: none;
+}
+
+.btn:not(.btn-check) + .btn:active {
+    color: black;
+    background: none;
+}
+
+.ratio > * {
+    background-color: black;
+}
+
+/*Комментарии*/
+
+.create-comment .action-buttons {
+    display: none;
+}
+
+.create-comment.focused .action-buttons {
+    display: block;
+}
+
+.comment-item {
+    position: relative;
+}
+
+.comment-actions {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.comment-actions .dropdown-toggle:after {
+    display: none;
+}
+
+.comment-item .media-input {
+    display: none;
+}
+
+.comment-item.edit .media-comment {
+    display: none;
+}
+
+.comment-item.edit .media-input {
+    display: flex;
+}
+
+.media {
+    display: flex;
+}
+
+.sub-comments .avatar {
+    width: 24px;
+}
