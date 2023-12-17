@@ -42,7 +42,7 @@ $subCommentCount = $model->getComments()->count();
                             <span style="cursor: pointer" class="link-primary"><?php echo '@' . $model->mention ?></span>
                         </a>
                     <?php endif; ?>
-                    <?php echo $model->comment ?>
+                    <?php echo nl2br($model->comment) ?>
                 </div>
 
                 <div class="bottom-actions my-2">

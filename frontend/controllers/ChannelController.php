@@ -34,7 +34,8 @@ class ChannelController extends Controller
         $channel = $this->findChannel($username);
 
         $dataProvider = new ActiveDataProvider([
-            'query' => Video::find()->creator($channel->id)->published(),
+            'query' => Video::find()->creator($channel->id)->published()
+                ->orderBy("created_at DESC"),
             'pagination' => [
                 'pageSize' => 8
             ]

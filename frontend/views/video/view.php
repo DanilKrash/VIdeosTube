@@ -45,9 +45,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php echo Yii::$app->formatter->asDate($model->created_at) ?>
             </div>
             <div>
-                <?php echo Html::encode($model->description) ?>
+                <?php echo nl2br($model->description) ?>
             </div>
-            <div style="margin-top: 20px">
+            <div style="margin-top: 30px">
                 #<?php echo Html::encode($model->tags) ?>
             </div>
         </div>

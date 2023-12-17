@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'class' => \yii\bootstrap5\LinkPager::class,
     ],
     'itemView' => '_video_item',
-    'layout' => '<div class="d-flex flex-wrap">{items}</div>{pager}',
+    'layout' => '<div class="d-flex justify-content-center flex-wrap">{items}</div>{pager}',
     'itemOptions' => [
         'tag' => false
     ]

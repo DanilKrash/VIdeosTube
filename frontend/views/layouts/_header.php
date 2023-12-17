@@ -3,6 +3,9 @@
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\helpers\Url;
+use common\helpers\Html;
+
+/** @var $model \common\models\Video */
 
 NavBar::begin([
     'brandLabel' => '<img style="margin-right: 5px" width="28" src="/img/logo.png"> VideosTube',
@@ -14,6 +17,7 @@ if (Yii::$app->user->isGuest) {
     $menuItems[] = ['label' => 'Зарегистрироваться', 'url' => ['/site/signup']];
     $menuItems[] = ['label' => 'Войти', 'url' => ['/site/login']];
 } else {
+    $menuItems[] = ['label' => 'Мой канал', 'url' => ['/channel/view', 'username' => Yii::$app->user->identity->username]];
     $menuItems[] = [
         'label' => 'Выйти (' . Yii::$app->user->identity->username . ')',
         'url' => ['/site/logout'],
