@@ -1,6 +1,6 @@
 <p align="center">
-    <a href="frontend/web/img/logo.png" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
+    <a href="#" target="_blank">
+        <img src="frontend/web/img/logo.png" height="100px">
     </a>
     <h1 align="center">VideosTube Advanced Project Template</h1>
     <br>
